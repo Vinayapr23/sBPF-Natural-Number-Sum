@@ -1,7 +1,7 @@
 .globl entrypoint
 entrypoint:
     // Load `n` from instruction data
-    ldxb r8, [r1+8+8+80+10240+8+8] ; r8 = n
+    ldxb r8, [r1+8+8+80+10240+8+8] // r8 = n
 
     // Reject n > 6074000999 (max safe n for sum)
     mov64 r2, 6074000999
