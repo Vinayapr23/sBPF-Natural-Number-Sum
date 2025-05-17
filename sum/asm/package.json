@@ -1,0 +1,20 @@
+{
+  "name": "Sum",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "viPR",
+  "license": "MIT",
+  "scripts": {
+    "test": "export SIGNER=$(cat ~/.config/solana/id.json) && mocha --import=tsx test/test.ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.91.8"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.6",
+    "chai": "^5.1.1",
+    "mocha": "^10.4.0",
+    "tsx": "^4.11.0"
+  }
+}
